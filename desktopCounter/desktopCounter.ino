@@ -45,6 +45,8 @@ void loop() {
     ledvalue -= 1;
     delay(4);
   }
+
+  // Code for debouncing the switches
   if (readingInc != pUpState)
     lastIncDebounceTime = millis();
 
